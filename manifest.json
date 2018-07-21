@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "DevMotivations",
-  "description": "Healthy eating habits",
-  "version": "0.0.1",
+  "description": "Healthy Dev Motivations",
+  "version": "1.0.4",
   "icons": {
     "64": "icons/icon64.png"
   },

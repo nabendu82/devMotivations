@@ -19,10 +19,14 @@ function getRandom() {
     'You are the average of the five people you spend the most time with. - Jim Rohn',
     'If you run around with 9 losers pretty soon you’ll be the 10th loser. - Les Brown',
     'You can change what you are and where you are by changing what goes into your mind. - Zig Ziglar',
-    'Being the richest man in the cemetery doesn’t matter to me. Going to bed at night saying we’ve done something wonderful… that’s what matters to me. - Steve Jobs',
-    'Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program. - Linus Torvalds',
-    'Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. - Steve Jobs',
-    'I think it is possible for ordinary people to choose to be extraordinary. - Elon Musk'
+    'I think it is possible for ordinary people to choose to be extraordinary. - Elon Musk',
+    'Websites promote you 24/7: No employee will do that. - Paul Cookson',
+    'First, solve the problem. Then, write the code. - John Johnson',
+    'Programs must be written for people to read, and only incidentally for machines to execute. - Abelson',
+    'Programming can be fun, so can cryptography; however they should not be combined. - Kreitzberg',
+    'Before software can be reusable it first has to be usable. - Ralph Johnson',
+    'Without requirements or design, programming is the art of adding bugs to an empty text file. - Louis Srygley',
+    'Java is to JavaScript what Car is to Carpet. - Chris Heilmann'
   ];
 
   return quotes[Math.floor(Math.random() * Math.floor(quotes.length))];
@@ -31,7 +35,6 @@ function getRandom() {
 browser.alarms.onAlarm.addListener(function(alarm) {
   browser.notifications.create(motivationNotification, {
     type: 'basic',
-    iconUrl: browser.extension.getURL('icons/icon.png'),
     title: 'DevMotivational Quote',
     message: getRandom()
   });
